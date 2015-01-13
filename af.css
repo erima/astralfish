@@ -1,0 +1,140 @@
+2015-01-13
+
+body {
+background-color: rgb(255,255,255);
+/*background-image: url(afwhite.png);*/
+font-family: "Helvetica Neue", Helvetica, sans-serif;
+font-size: 100%;
+line-height: 1.3em;
+
+}
+
+body, a {
+color: rgb(0,0,0);
+color: rgba(0,0,0, 1);
+text-decoration: none;
+}
+
+.copy a {text-decoration: underline; }
+
+p {
+padding: .8em auto;
+}
+
+blockquote {
+padding: .8em;
+font-style: italic;
+}
+
+ol, ul {
+padding: .8em;
+}
+
+h3 {
+border-bottom: double 1px black;
+text-transform: uppercase;
+}
+
+#everything {}
+
+#whut, #title, #footer, .faq {
+float: left;
+width: 24em;
+margin: 1em 2em .5em .5em;
+font-size: .8em;
+}
+
+#whut, #footer {margin-top: 1em;}
+
+
+#title {
+text-align: center;
+}
+
+h1 {
+font-size: 2.5em;
+text-transform: lowercase;
+/* text-shadow: 5px 5px 19px rgba(0,0,0, .4),
+-5px -8px 20px rgba(0,0,0, .4),
+-5px 9px 10px rgba(0,0,0, .4),
+5px -5px 5px rgba(0,0,0, .4);
+-webkit-transition: ease 1s text-shadow;
+opacity: 1;
+*/
+}
+
+h2 {
+text-transform: uppercase;
+margin: 1em;
+display: none;
+/*font-size: 1.5em;*/
+/* text-shadow: 2px 3px 9px rgba(0,0,0, .4),
+-3px -4px 10px rgba(0,0,0, .4),
+-3px 5px 5px rgba(0,0,0, .4),
+3px -2px 3px rgba(0,0,0, .4);
+-webkit-transition: ease 1s text-shadow;
+opacity: 1;
+*/
+}
+
+#title img {
+width: 75%;
+}
+
+#title ul {
+border-bottom: 1px black solid;
+margin: .25em;
+font-size: 1.5em;
+}
+
+#title ul li {
+display:inline;
+padding: .2em .5em;
+}
+
+.hidden {
+display: none;
+}
+
+#note {
+display: none;
+background-color: black;
+color: white;
+padding: 1%;
+font-size: .5em;
+text-align: center;
+}
+
+#gallery {clear: left;}
+
+#gallery li {
+	display: inline;
+	margin: 1em;}
+
+#gallery li img {
+	width: 20%;
+	border: 1px solid rgb(150,150,150);
+}
+
+#gallery li img:hover {
+	border: 1px solid rgb(0,0,0);
+}
+
+/* Media Structure ~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width: 520px) {
+	#whut, #title, #footer, #gallery .faq {
+		float: none;
+		width: 90%;
+		padding: 0 5%;
+		margin: 5% auto;
+		}
+	#note {
+		display: inherit;}
+
+	#gallery li {display: block;}
+
+	#gallery li img {
+				width: 90%;
+				}
+}
