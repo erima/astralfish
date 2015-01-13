@@ -1,2 +1,2 @@
 # astralfish
-Repository for AstralFish.com
+Repository for [AstralFish](http://astralfish.com)
